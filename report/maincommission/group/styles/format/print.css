@@ -1,0 +1,106 @@
+@media screen {
+  #report {
+    margin: 0 auto;
+    float: none;
+  }
+  #report #header #date {
+    text-align: right;
+  }
+  #report #body #datatable {
+    table-layout: fixed;
+    border-collapse: collapse;
+    border: 1px solid black;
+  }
+  #report #body #datatable thead tr th[class*=col-] {
+    padding: 0;
+    border: 1px solid black;
+    text-align: center;
+    vertical-align: middle;
+  }
+  #report #body #datatable tbody tr td {
+    padding: 4px 4px;
+    border: 1px solid black;
+  }
+  #report #body #datatable tbody tr td.col-numbering {
+    text-align: center;
+    vertical-align: top;
+  }
+  #report #footer #firstline .title {
+    display: inline-block;
+  }
+  #report #footer #firstline .underline1 {
+    display: inline-block;
+  }
+  #report #footer #firstline .underline2 {
+    display: inline-block;
+  }
+  #report #footer #secondline .title {
+    display: inline-block;
+  }
+  #report #footer #secondline .underline1 {
+    display: inline-block;
+  }
+  #report #footer #secondline .underline2 {
+    display: inline-block;
+  }
+  #report #footer #thirdline .title {
+    display: inline-block;
+  }
+  #report #footer #thirdline .underline1 {
+    display: inline-block;
+  }
+  #report #footer #thirdline .underline2 {
+    display: inline-block;
+  }
+}
+@media print {
+  #report #header #date {
+    text-align: right;
+  }
+  #report #body #datatable {
+    table-layout: fixed;
+    border-collapse: collapse;
+    border: 1px solid black;
+  }
+  #report #body #datatable thead tr th[class*=col-] {
+    padding: 0;
+    border: 1px solid black;
+    text-align: center;
+    vertical-align: middle;
+  }
+  #report #body #datatable tbody tr td {
+    padding: 4px 4px;
+    border: 1px solid black;
+  }
+  #report #body #datatable tbody tr td.col-numbering {
+    text-align: center;
+    vertical-align: top;
+  }
+  #report #footer #firstline .title {
+    display: inline-block;
+  }
+  #report #footer #firstline .underline1 {
+    display: inline-block;
+  }
+  #report #footer #firstline .underline2 {
+    display: inline-block;
+  }
+  #report #footer #secondline .title {
+    display: inline-block;
+  }
+  #report #footer #secondline .underline1 {
+    display: inline-block;
+  }
+  #report #footer #secondline .underline2 {
+    display: inline-block;
+  }
+  #report #footer #thirdline .title {
+    display: inline-block;
+  }
+  #report #footer #thirdline .underline1 {
+    display: inline-block;
+  }
+  #report #footer #thirdline .underline2 {
+    display: inline-block;
+  }
+}

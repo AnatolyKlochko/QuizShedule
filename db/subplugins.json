@@ -1,0 +1,8 @@
+{
+    "plugintypes": {
+		"quizschedule": "mod\/quizschedule",
+		"quizschedulesynchronization": "mod\/quizschedule\/synchronization",
+		"quizschedulemaincommission": "mod\/quizschedule\/report\/maincommission",
+		"quizschedulecoursetraining": "mod\/quizschedule\/report\/coursetraining"
+    }
+}

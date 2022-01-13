@@ -1,0 +1,8 @@
+{
+    "quiz": {
+        "periodicity": {
+            "mu": "year",
+            "amount": 1
+        }
+    }
+}

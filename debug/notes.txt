@@ -1,0 +1,116 @@
+/view/add.php: quizlist view
+
+
+
+BUGS
+
+
+- 
+
+- JS plugin DataTable didn't react to unsortable array - all columns still sortable.
+The reason:
+unsortable = (6) ["7", "8", "9", "10", "11", "12"] - all elements is STRINGS, but
+plugin requires INTEGER
+
+- MySQL Cursor selected only first 5 rows
+reason: https://stackoverflow.com/questions/12017869/mysql-cursor-fetching-only-one-row
+
+- by cause trying to save grade in mdl_quiz_attempts table, the field 'layout' in
+the table has been filled with '(by quizschedule module)' string. Namely that will cause
+next error:
+message => (string) Invalid quiz attempt ID
+until trying to get attempt object -
+schedule.php: attempt_is_passed():~6:$attemptobj = \quiz_create_attempt_handling_errors( $attemptid, null );
+> delete every row with sumgrades=1 AND layout='(by quizschedule module)'
+
+- until update 'mdl_quizschedule' field 'grade' hasn't been updated.
+> Moodle at public function get_columns($table, $usecache=true) by default as see
+uses cache, but 'grade' field had been added early. JUST PURGE CACHES.
+
+- Виняток - Class 'mod_quizschedule\output\redundant_data_renderer' not found
+just Purge Caches
+
+- show every fk for table or referenced table:
+SELECT
+    TABLE_NAME,
+    COLUMN_NAME,
+    CONSTRAINT_NAME,
+    REFERENCED_TABLE_NAME,
+    REFERENCED_COLUMN_NAME
+FROM
+    INFORMATION_SCHEMA.KEY_COLUMN_USAGE
+WHERE
+	REFERENCED_TABLE_SCHEMA = 'moodle'
+    AND REFERENCED_TABLE_NAME = 'mdl_category';
+
+
+- Люда искала точное совпадение по фамилии и имени в форме добавления плана. Корректный
+поиск останавливался на символе "i", оказалось, что он не был кирилицей, а латиницей,
+потому что, когда ввели латинскую "i", то фильтр продолжил корректно работать. Эти
+данные берутся из AD.
+
+
+
+- Виняток - Class 'mod_quizschedule\output\link_quiz_to_grcolumn_renderer' not found
+But on local all work properly.
+reasons:
+    - Moodle uses OP Cache, as solution just Керування сайтом > Розробка > Purge Caches
+    - wrong whole folder (with subfolders) owner - after copying is "root", but need "apache":
+in mn commander, come into copied folder, then in command line write command:
+sudo chown -R {newownername} .
+sudo chown -R apache .   // makes user "apache" as owner of current directory
+sudo chown -R root /var/www/html/moodle     // it means make root as owner of ...moodle directory and all its subdirectories (-R - recursively)
+    - "apache" or "root" has no privileges "rw" for folder - need to give privileges for that:
+chmod -R 0755 /var/www/html/moodle
+find /var/www/html/moodle -type f -exec chmod 0644 {} \;
+
+
+
+- shown only 'Розвиток компетенцій'
+reason: quiz_get_allowed_root_categories(  ): ... on production was changed Category Name
+
+
+
+- on moodle2 didn't show Quiz List. Reason: at admin settings was saved "'кзамен'" with single quotes
+instead "кзамен" without single quotes and matching didn't work.
+
+
+
+- I tried to delete tables in the order:
+DROP TABLE IF EXISTS `mdl_quizschedule_columns`;
+DROP TABLE IF EXISTS `mdl_quizschedule_columns_quizzes`;
+DROP TABLE IF EXISTS `mdl_quizschedule_affiliatelist`;
+DROP TABLE IF EXISTS `mdl_quizschedule_commissiontype`;
+DROP TABLE IF EXISTS `mdl_quizschedule`;
+DROP TABLE IF EXISTS `mdl_quizschedule_changes`;
+
+and got error:
+#1217 - Невозможно удалить или обновить родительскую строку: проверка ограничений внешнего ключа не выполняется
+Solution: three tables had dependencies from their parent tables. This order works well:
+DROP TABLE IF EXISTS `mdl_quizschedule_changes`;
+DROP TABLE IF EXISTS `mdl_quizschedule`;
+DROP TABLE IF EXISTS `mdl_quizschedule_columns_quizzes`;
+--parents:
+DROP TABLE IF EXISTS `mdl_quizschedule_columns`;
+DROP TABLE IF EXISTS `mdl_quizschedule_affiliatelist`;
+DROP TABLE IF EXISTS `mdl_quizschedule_commissiontype`;
+
+
+
+- I wanted to add a Popover to General Report Table and got - $(...).popover is not a function TypeError: $(...).popover is not a function. 
+Reason: if bootstrap.bundle.js connect in footer all get down. Solution:
+$PAGE->requires->js( new \moodle_url( $CFG->wwwroot . '/mod/quizschedule/styles/bootstrap/4.0.0/js/bootstrap.bundle.min.js' ), true );
+Reason 2: probably exists conflict between jquery versions 1.12.4 and 3.x.x. Finally, it is right - at bottom was added include of jquery 1.12.4.
+
+
+
+- one SQL doesn't work... Reason: in query text was omitted one or two parameters (their place were just empty). Solution: enable global variable $CFG at beginning of method,
+because values for query text is there.
+
+
+
+- one SQL doesn't work... Reason: INNER JOIN doesn't work for empty cells (does not show resulting rows). Solution: LEFT JOIN ...
+
+
+
+- one SQL doesn't work... Reason: within SQL text was used reserved words like 'key', 'value'. Solution: `key`, `value`

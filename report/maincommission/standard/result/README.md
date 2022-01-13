@@ -1,0 +1,1 @@
+it's Standard (for one person)

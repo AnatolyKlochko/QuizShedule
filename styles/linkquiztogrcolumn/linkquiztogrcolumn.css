@@ -1,0 +1,132 @@
+/* Form */
+@media (max-width: 991px) {
+  #frm-affiliate #cntr-affiliate #cntr-search {
+    text-align: center;
+  }
+  #frm-affiliate #cntr-affiliate #cntr-search > input[name="submit_affiliate"] {
+    margin: 1rem 0 0 0;
+  }
+  #quizlist_grcolumn tbody tr td.col-status,
+  #quizlist_grcolumn_wrapper tbody tr td.col-status {
+    text-align: left !important;
+  }
+  #quizlist_grcolumn tbody tr td.col-status ::before,
+  #quizlist_grcolumn_wrapper tbody tr td.col-status ::before {
+    content: "";
+  }
+}
+/* Search Field */
+.cntr-quiz-grcolumn #frm-quizname {
+  margin-bottom: 2rem;
+}
+.cntr-quiz-grcolumn #frm-quizname #cntr-quizname {
+  min-width: 25rem;
+  margin-right: 1rem;
+}
+.cntr-quiz-grcolumn #frm-quizname #cntr-quizname #quizname {
+  min-width: inherit;
+}
+.cntr-quiz-grcolumn #frm-quizzes-grcolumn #cntr-grcolumn {
+  margin-bottom: 2rem;
+}
+.cntr-quiz-grcolumn #frm-quizzes-grcolumn #cntr-grcolumn .cntr-grcolumnlist #grcolumnid {
+  width: 25rem;
+}
+/* Quizzes Table */
+/* Header Cells */
+/* Columns */
+/* Employee Results Column Visibility */
+#quizlist_grcolumn-column-visibility {
+  font: normal 0.64rem/0.8rem Arial, Helvetica, sans-serif;
+  text-align: right;
+}
+#quizlist_grcolumn-column-visibility .splitter {
+  display: inline-block;
+  width: 1em;
+}
+#quizlist_grcolumn-column-visibility .inactive {
+  color: #c0c0c0;
+}
+#quizlist_grcolumn,
+#quizlist_grcolumn_wrapper {
+  margin-bottom: 3rem;
+}
+#quizlist_grcolumn #quizlist_grcolumn_filter,
+#quizlist_grcolumn_wrapper #quizlist_grcolumn_filter {
+  margin: 0 0 1.5rem 0;
+  text-align: left;
+}
+#quizlist_grcolumn #quizlist_grcolumn_filter > label,
+#quizlist_grcolumn_wrapper #quizlist_grcolumn_filter > label {
+  display: block;
+  width: 100%;
+}
+#quizlist_grcolumn #quizlist_grcolumn_filter > label > input[type="search"],
+#quizlist_grcolumn_wrapper #quizlist_grcolumn_filter > label > input[type="search"] {
+  display: block;
+  width: 90%;
+  max-width: 100%;
+  height: 1.8rem;
+  font: normal 0.8rem/0.8rem Arial, Helvetica, sans-serif;
+}
+#quizlist_grcolumn #quizlist_grcolumn_length,
+#quizlist_grcolumn_wrapper #quizlist_grcolumn_length {
+  margin: 0 0 1.5rem 0;
+}
+#quizlist_grcolumn #quizlist_grcolumn_length > label,
+#quizlist_grcolumn_wrapper #quizlist_grcolumn_length > label {
+  display: block;
+  width: 100%;
+  text-align: right;
+}
+#quizlist_grcolumn #quizlist_grcolumn_length > label > input[type="select"],
+#quizlist_grcolumn_wrapper #quizlist_grcolumn_length > label > input[type="select"] {
+  /*                display: block;
+                
+                width: 90%;
+                
+                max-width: 100%;*/
+  height: 1.8rem;
+  font: normal 0.8rem/0.8rem Arial, Helvetica, sans-serif;
+}
+#quizlist_grcolumn thead tr,
+#quizlist_grcolumn_wrapper thead tr,
+#quizlist_grcolumn tfoot tr,
+#quizlist_grcolumn_wrapper tfoot tr {
+  /*            td.col-status {
+                    
+                text-align: center;
+            }*/
+}
+#quizlist_grcolumn thead tr th,
+#quizlist_grcolumn_wrapper thead tr th,
+#quizlist_grcolumn tfoot tr th,
+#quizlist_grcolumn_wrapper tfoot tr th {
+  font: normal 0.8rem/0.8rem Arial, Helvetica, sans-serif;
+  color: #0074D9;
+}
+#quizlist_grcolumn tbody tr.highlight,
+#quizlist_grcolumn_wrapper tbody tr.highlight {
+  background-color: #f4f4f4;
+}
+#quizlist_grcolumn tbody tr td,
+#quizlist_grcolumn_wrapper tbody tr td {
+  font: normal 0.8rem/0.8rem Arial, Helvetica, sans-serif;
+  color: black;
+  vertical-align: middle;
+}
+#quizlist_grcolumn tbody tr td.col-status span,
+#quizlist_grcolumn_wrapper tbody tr td.col-status span {
+  color: lightgreen;
+}
+#quizlist_grcolumn tbody tr td.col-datenext input[type="date"],
+#quizlist_grcolumn_wrapper tbody tr td.col-datenext input[type="date"] {
+  height: 1.8rem;
+  font: normal 0.8rem/0.8rem Arial, Helvetica, sans-serif;
+}
+#quizlist_grcolumn tbody tr td.col-clean span,
+#quizlist_grcolumn_wrapper tbody tr td.col-clean span {
+  font: normal 0.8rem/0.8rem Arial, Helvetica, sans-serif;
+  text-transform: none;
+}
+/*# sourceMappingURL=linkquiztogrcolumn.css.map */

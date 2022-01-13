@@ -1,0 +1,24 @@
+#cntr-addresult {
+  display: flexbox;
+  justify-content: center;
+}
+#cntr-addresult #tbl-result {
+  widht: 900px;
+}
+#cntr-addresult #tbl-result tbody tr td {
+  position: relative;
+}
+#cntr-addresult #tbl-result tbody tr td.column-name {
+  font-weight: 700;
+}
+#cntr-addresult #tbl-result tbody tr td span.new {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  color: green;
+  padding: 5px;
+  border: 3px lightgreen solid;
+  border-radius: 5px;
+}

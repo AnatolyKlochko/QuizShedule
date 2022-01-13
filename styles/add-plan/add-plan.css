@@ -1,0 +1,115 @@
+/* Form */
+@media (max-width: 991px) {
+  #frm-affiliate #cntr-affiliate #cntr-search {
+    text-align: center;
+  }
+  #frm-affiliate #cntr-affiliate #cntr-search > input[name="submit_affiliate"] {
+    margin: 1rem 0 0 0;
+  }
+  #employeelist tbody tr td.col-status,
+  #employeelist_wrapper tbody tr td.col-status {
+    text-align: left !important;
+  }
+  #employeelist tbody tr td.col-status ::before,
+  #employeelist_wrapper tbody tr td.col-status ::before {
+    content: "";
+  }
+}
+/* Employee-Plan-Dates Table */
+/* Header Cells */
+/* Columns */
+/* Employee Results Column Visibility */
+#employeelist-column-visibility {
+  font: normal 0.64rem/0.8rem Arial, Helvetica, sans-serif;
+  text-align: right;
+}
+#employeelist-column-visibility .splitter {
+  display: inline-block;
+  width: 1em;
+}
+#employeelist-column-visibility .inactive {
+  color: #c0c0c0;
+}
+#employeelist,
+#employeelist_wrapper {
+  margin-bottom: 3rem;
+}
+#employeelist #employeelist_filter,
+#employeelist_wrapper #employeelist_filter {
+  margin: 1.5rem 0 1.5rem 0;
+  text-align: left;
+}
+#employeelist #employeelist_filter > label,
+#employeelist_wrapper #employeelist_filter > label {
+  display: block;
+  width: 100%;
+}
+#employeelist #employeelist_filter > label > input[type="search"],
+#employeelist_wrapper #employeelist_filter > label > input[type="search"] {
+  display: block;
+  width: 90%;
+  max-width: 100%;
+  height: 1.8rem;
+  font: normal 0.8rem/0.8rem Arial, Helvetica, sans-serif;
+}
+#employeelist #employeelist_length,
+#employeelist_wrapper #employeelist_length {
+  margin: 1.5rem 0 1.5rem 0;
+}
+#employeelist #employeelist_length > label,
+#employeelist_wrapper #employeelist_length > label {
+  display: block;
+  width: 100%;
+  text-align: right;
+}
+#employeelist #employeelist_length > label > input[type="select"],
+#employeelist_wrapper #employeelist_length > label > input[type="select"] {
+  /*                display: block;
+                
+                width: 90%;
+                
+                max-width: 100%;*/
+  height: 1.8rem;
+  font: normal 0.8rem/0.8rem Arial, Helvetica, sans-serif;
+}
+#employeelist thead tr,
+#employeelist_wrapper thead tr,
+#employeelist tfoot tr,
+#employeelist_wrapper tfoot tr {
+  /*            td.col-status {
+                    
+                text-align: center;
+            }*/
+}
+#employeelist thead tr th,
+#employeelist_wrapper thead tr th,
+#employeelist tfoot tr th,
+#employeelist_wrapper tfoot tr th {
+  font: normal 0.8rem/0.8rem Arial, Helvetica, sans-serif;
+  color: #0074D9;
+}
+#employeelist tbody tr.highlight,
+#employeelist_wrapper tbody tr.highlight {
+  background-color: #f4f4f4;
+}
+#employeelist tbody tr td,
+#employeelist_wrapper tbody tr td {
+  font: normal 0.8rem/0.8rem Arial, Helvetica, sans-serif;
+  color: black;
+  vertical-align: middle;
+}
+#employeelist tbody tr td.col-status span,
+#employeelist_wrapper tbody tr td.col-status span {
+  color: lightgreen;
+}
+#employeelist tbody tr td.col-datenext input[type="date"],
+#employeelist_wrapper tbody tr td.col-datenext input[type="date"] {
+  height: 1.8rem;
+  font: normal 0.8rem/0.8rem Arial, Helvetica, sans-serif;
+}
+#employeelist tbody tr td.col-clean span,
+#employeelist_wrapper tbody tr td.col-clean span {
+  font: normal 0.8rem/0.8rem Arial, Helvetica, sans-serif;
+  text-transform: none;
+}
+/*# sourceMappingURL=add-plan.css.map */

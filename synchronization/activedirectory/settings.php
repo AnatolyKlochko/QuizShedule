@@ -1,0 +1,7 @@
+<?php
+// Mapping
+$settings->add(new admin_setting_heading('mapping', 'Зв\'язування (mapping)', 'Налаштування зв\'язків між стовпцями таблиці <b>\'mdl_user\'</b> та <b>контейнером Active Directory</b>. Первісно, данних маппінг, налаштовується у <b>\'Керування сайтом > Модулі > Аутентифікація > Сервер LDAP\'</b> у розділі <b>\'Відображення даних\'</b>'));
+$settings->add(new admin_setting_configtext('mapping_number', 'Ідентифікатор співробітника', 'Назва стовпчику в mdl_user в якому буде збережене значення ідентифікатору співробітника з Active Directory.', 'username', PARAM_TEXT ) );
+$settings->add(new admin_setting_configtext('mapping_position', 'Посада', 'Назва стовпчику в mdl_user в якому буде збережене значення посади співробітника з Active Directory.', 'address', PARAM_TEXT ) );
+$settings->add(new admin_setting_configtext('mapping_affiliate', 'Філія', 'Назва стовпчику в mdl_user в якому буде збережене значення філії співробітника з Active Directory.', 'institution', PARAM_TEXT ) );
+$settings->add(new admin_setting_configtext('mapping_department', 'Відділ', 'Назва стовпчику в mdl_user в якому буде збережене значення відділу співробітника з Active Directory.', 'department', PARAM_TEXT ) );

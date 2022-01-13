@@ -1,0 +1,23 @@
+Test message at C:\xampp\apps\moodle.oe.pl.ua.sandbox\htdocs\mod\quizschedule\lib.php, mod_quizschedule_before_footer
+
+moodle_page
+
+side-pre - side-post
+
+side-pre: course_list (block_course_list), html (block_html), 
+
+stdClass::__set_state(array(
+   'title' => 'Графік перевірки знань',
+   'classes' => '',
+   'format' => '1',
+   'text' => '<div class="column c1"><a href="https://moodle.oe.pl.ua/moodle/mod/quizschedule/report.php" target="_blank"><i class="icon fa fa-list fa-fw" title="Курс" aria-label="Курс"></i>Загальний графік</a>
+</div>
+<div class="column c1"><a href="https://moodle.oe.pl.ua/moodle/mod/quizschedule/add.php" target="_blank"><i class="icon fa fa-pencil fa-fw" title="Курс" aria-label="Курс"></i>Додати результати екзамену</a>
+</div>
+<div class="column c1"><a href="https://moodle.oe.pl.ua/moodle/mod/quizschedule/add_plan.php" target="_blank"><i class="icon fa far fa-calendar fa-fw " title="Курс" aria-label="Курс"></i>Додати план екзамену</a>
+</div>
+<div class="column c1"><a href="https://cloud.poe.pl.ua/index.php/s/N3BjNUGzc05KSFy" target="_blank"><i class="icon fa fa-book fa-fw " title="Курс" aria-label="Курс"></i>Інструкція користувача</a>
+</div>
+<div class="column c1"><a href="https://cloud.poe.pl.ua/index.php/s/N3BjNUGzc05KSFy?path=%2F%D0%92%D1%96%D0%B4%D0%BF%D0%BE%D0%B2%D1%96%D0%B4%D0%B0%D0%BB%D1%8C%D0%BD%D1%96%20%D0%B7%D0%B0%20%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%BD%D1%8F%20%D0%B5%D0%BB%D0%B5%D0%BA%D1%82%D1%80%D0%BE%D0%BD%D0%BD%D0%B8%D1%85%20%D0%B3%D1%80%D0%B0%D1%84%D1%96%D0%BA%D1%96%D0%B2%20%D0%BF%D0%B5%D1%80%D0%B5%D0%B2%D1%96%D1%80%D0%BA%D0%B8%20%D0%B7%D0%BD%D0%B0%D0%BD%D1%8C%20%D0%B2%20%D0%BA%D0%BE%D0%BC%D1%96%D1%81%D1%96%D1%8F%D1%85" target="_blank"><i class="icon fa fa-book fa-fw " title="Курс" aria-label="Курс"></i>Відповідальні за ведення електронних графіків перевірки знань</a>
+</div>',
+))

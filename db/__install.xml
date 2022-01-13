@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<XMLDB PATH="mod/quizschedule/db" VERSION="20190604" COMMENT="XMLDB file for Moodle mod/quizschedule"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="../../../lib/xmldb/xmldb.xsd"
+>
+    <TABLES>
+        <TABLE NAME="quizschedule_test" COMMENT="Only for installation.">
+            <FIELDS>
+                <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="true" COMMENT="Standard Moodle primary key."/>
+                <FIELD NAME="optkey" TYPE="char" LENGTH="100" NOTNULL="true" SEQUENCE="false" COMMENT="An option key."/>
+                <FIELD NAME="optval" TYPE="text" NOTNULL="true" SEQUENCE="false" COMMENT="An option value."/>
+            </FIELDS>
+            <KEYS>
+                <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+            </KEYS>
+        </TABLE>
+    </TABLES>
+</XMLDB>

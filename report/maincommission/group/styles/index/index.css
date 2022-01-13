@@ -1,0 +1,145 @@
+/* Employee's' Table */
+/* Header Cells */
+/* Columns */
+.cntr-maincommission-group {
+  /* Employee Results Column Visibility */
+}
+.cntr-maincommission-group #frm-quizdate {
+  margin-bottom: 2rem;
+}
+.cntr-maincommission-group #frm-quizdate #cntr-quizdate {
+  min-width: 145px;
+  margin-right: 40px;
+}
+.cntr-maincommission-group #frm-quizdate #cntr-quizdate #quizdate {
+  min-width: inherit;
+}
+.cntr-maincommission-group #frm-quizdate #cntr-moodleattempt {
+  margin-right: 40px;
+}
+.cntr-maincommission-group #frm-quizdate #cntr-moodleattempt #moodleattempt {
+  min-width: inherit;
+  margin-right: 8px;
+}
+.cntr-maincommission-group #frm-quizdate #cntr-schedule {
+  margin-right: 40px;
+}
+.cntr-maincommission-group #frm-quizdate #cntr-schedule #schedule {
+  min-width: inherit;
+  margin-right: 8px;
+}
+.cntr-maincommission-group #frm-quizdate #quizdate_submit {
+  width: 150px;
+}
+.cntr-maincommission-group #employeelist-column-visibility {
+  font: normal 0.64rem/0.8rem Arial, Helvetica, sans-serif;
+  text-align: right;
+}
+.cntr-maincommission-group #employeelist-column-visibility .splitter {
+  display: inline-block;
+  width: 1em;
+}
+.cntr-maincommission-group #employeelist-column-visibility .inactive {
+  color: #c0c0c0;
+}
+.cntr-maincommission-group #employeelist,
+.cntr-maincommission-group #employeelist_wrapper {
+  margin-bottom: 3rem;
+}
+.cntr-maincommission-group #employeelist #employeelist_filter,
+.cntr-maincommission-group #employeelist_wrapper #employeelist_filter {
+  margin: 0 0 1.5rem 0;
+  text-align: left;
+}
+.cntr-maincommission-group #employeelist #employeelist_filter > label,
+.cntr-maincommission-group #employeelist_wrapper #employeelist_filter > label {
+  display: block;
+  width: 100%;
+}
+.cntr-maincommission-group #employeelist #employeelist_filter > label > input[type="search"],
+.cntr-maincommission-group #employeelist_wrapper #employeelist_filter > label > input[type="search"] {
+  display: block;
+  width: 90%;
+  max-width: 100%;
+  height: 1.8rem;
+  font: normal 0.8rem/0.8rem Arial, Helvetica, sans-serif;
+}
+.cntr-maincommission-group #employeelist #employeelist_length,
+.cntr-maincommission-group #employeelist_wrapper #employeelist_length {
+  margin: 0 0 1.5rem 0;
+}
+.cntr-maincommission-group #employeelist #employeelist_length > label,
+.cntr-maincommission-group #employeelist_wrapper #employeelist_length > label {
+  display: block;
+  width: 100%;
+  text-align: right;
+}
+.cntr-maincommission-group #employeelist #employeelist_length > label > input[type="select"],
+.cntr-maincommission-group #employeelist_wrapper #employeelist_length > label > input[type="select"] {
+  /*                display: block;
+
+                    width: 90%;
+
+                    max-width: 100%;*/
+  height: 1.8rem;
+  font: normal 0.8rem/0.8rem Arial, Helvetica, sans-serif;
+}
+.cntr-maincommission-group #employeelist thead tr,
+.cntr-maincommission-group #employeelist_wrapper thead tr,
+.cntr-maincommission-group #employeelist tfoot tr,
+.cntr-maincommission-group #employeelist_wrapper tfoot tr {
+  /*            td.col-status {
+
+                    text-align: center;
+                }*/
+}
+.cntr-maincommission-group #employeelist thead tr th,
+.cntr-maincommission-group #employeelist_wrapper thead tr th,
+.cntr-maincommission-group #employeelist tfoot tr th,
+.cntr-maincommission-group #employeelist_wrapper tfoot tr th {
+  font: normal 0.8rem/0.8rem Arial, Helvetica, sans-serif;
+  color: #0074D9;
+}
+.cntr-maincommission-group #employeelist tbody tr.highlight,
+.cntr-maincommission-group #employeelist_wrapper tbody tr.highlight {
+  background-color: #f4f4f4;
+}
+.cntr-maincommission-group #employeelist tbody tr td,
+.cntr-maincommission-group #employeelist_wrapper tbody tr td {
+  font: normal 0.8rem/0.8rem Arial, Helvetica, sans-serif;
+  color: black;
+  vertical-align: middle;
+}
+.cntr-maincommission-group #employeelist tbody tr td.col-status span,
+.cntr-maincommission-group #employeelist_wrapper tbody tr td.col-status span {
+  color: lightgreen;
+}
+.cntr-maincommission-group #employeelist tbody tr td.col-datenext input[type="date"],
+.cntr-maincommission-group #employeelist_wrapper tbody tr td.col-datenext input[type="date"] {
+  height: 1.8rem;
+  font: normal 0.8rem/0.8rem Arial, Helvetica, sans-serif;
+}
+.cntr-maincommission-group #employeelist tbody tr td.col-delete span,
+.cntr-maincommission-group #employeelist_wrapper tbody tr td.col-delete span {
+  font: normal 0.8rem/0.8rem Arial, Helvetica, sans-serif;
+  text-transform: none;
+}
+.cntr-maincommission-group #cntr-formatbuttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+  margin-bottom: 30px;
+}
+.cntr-maincommission-group #cntr-formatbuttons #cntr-print #btn-print {
+  width: 150px !important;
+  margin: auto 20px;
+}
+.cntr-maincommission-group #cntr-formatbuttons #cntr-pdf #btn-pdf {
+  width: 150px !important;
+  margin: auto 20px;
+}
+.cntr-maincommission-group #cntr-formatbuttons #cntr-docx #btn-docx {
+  width: 150px !important;
+  margin: auto 20px;
+}

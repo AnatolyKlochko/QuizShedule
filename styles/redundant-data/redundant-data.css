@@ -1,0 +1,104 @@
+/* Form */
+/* Employee-Results Table */
+/* Header Cells */
+/* Columns */
+.cntr-redundant-data #cntr-delete-result #delete-result .rowscount {
+  color: blue;
+}
+.cntr-redundant-data #cntr-delete-result #delete-result .message {
+  letter-spacing: 2px;
+}
+.cntr-redundant-data #frm-redundant-data {
+  /* Employee Results Column Visibility */
+}
+.cntr-redundant-data #frm-redundant-data #redundantdatalist-column-visibility {
+  font: normal 0.64rem/0.8rem Arial, Helvetica, sans-serif;
+  text-align: right;
+}
+.cntr-redundant-data #frm-redundant-data #redundantdatalist-column-visibility .splitter {
+  display: inline-block;
+  width: 1em;
+}
+.cntr-redundant-data #frm-redundant-data #redundantdatalist-column-visibility .inactive {
+  color: #c0c0c0;
+}
+.cntr-redundant-data #frm-redundant-data #redundantdatalist,
+.cntr-redundant-data #frm-redundant-data #redundantdatalist_wrapper {
+  margin-bottom: 3rem;
+}
+.cntr-redundant-data #frm-redundant-data #redundantdatalist #redundantdatalist_filter,
+.cntr-redundant-data #frm-redundant-data #redundantdatalist_wrapper #redundantdatalist_filter {
+  margin: 1.5rem 0 1.5rem 0;
+  text-align: left;
+}
+.cntr-redundant-data #frm-redundant-data #redundantdatalist #redundantdatalist_filter > label,
+.cntr-redundant-data #frm-redundant-data #redundantdatalist_wrapper #redundantdatalist_filter > label {
+  display: block;
+  width: 100%;
+}
+.cntr-redundant-data #frm-redundant-data #redundantdatalist #redundantdatalist_filter > label > input[type="search"],
+.cntr-redundant-data #frm-redundant-data #redundantdatalist_wrapper #redundantdatalist_filter > label > input[type="search"] {
+  display: block;
+  width: 90%;
+  max-width: 100%;
+  height: 1.8rem;
+  font: normal 0.8rem/0.8rem Arial, Helvetica, sans-serif;
+}
+.cntr-redundant-data #frm-redundant-data #redundantdatalist #redundantdatalist_length,
+.cntr-redundant-data #frm-redundant-data #redundantdatalist_wrapper #redundantdatalist_length {
+  margin: 1.5rem 0 1.5rem 0;
+}
+.cntr-redundant-data #frm-redundant-data #redundantdatalist #redundantdatalist_length > label,
+.cntr-redundant-data #frm-redundant-data #redundantdatalist_wrapper #redundantdatalist_length > label {
+  display: block;
+  width: 100%;
+  text-align: right;
+}
+.cntr-redundant-data #frm-redundant-data #redundantdatalist #redundantdatalist_length > label > input[type="select"],
+.cntr-redundant-data #frm-redundant-data #redundantdatalist_wrapper #redundantdatalist_length > label > input[type="select"] {
+  /*                display: block;
+
+                        width: 90%;
+
+                        max-width: 100%;*/
+  height: 1.8rem;
+  font: normal 0.8rem/0.8rem Arial, Helvetica, sans-serif;
+}
+.cntr-redundant-data #frm-redundant-data #redundantdatalist thead tr th,
+.cntr-redundant-data #frm-redundant-data #redundantdatalist_wrapper thead tr th,
+.cntr-redundant-data #frm-redundant-data #redundantdatalist tfoot tr th,
+.cntr-redundant-data #frm-redundant-data #redundantdatalist_wrapper tfoot tr th {
+  font: normal 0.8rem/0.8rem Arial, Helvetica, sans-serif;
+  color: #0074D9;
+}
+.cntr-redundant-data #frm-redundant-data #redundantdatalist tbody tr.employee,
+.cntr-redundant-data #frm-redundant-data #redundantdatalist_wrapper tbody tr.employee {
+  background-color: #000;
+}
+.cntr-redundant-data #frm-redundant-data #redundantdatalist tbody tr.highlight,
+.cntr-redundant-data #frm-redundant-data #redundantdatalist_wrapper tbody tr.highlight {
+  background-color: #f4f4f4;
+}
+.cntr-redundant-data #frm-redundant-data #redundantdatalist tbody tr.checked-on,
+.cntr-redundant-data #frm-redundant-data #redundantdatalist_wrapper tbody tr.checked-on {
+  background-color: rgba(255, 0, 0, 0.2);
+}
+.cntr-redundant-data #frm-redundant-data #redundantdatalist tbody tr.checked-off,
+.cntr-redundant-data #frm-redundant-data #redundantdatalist_wrapper tbody tr.checked-off {
+  background-color: rgba(0, 255, 0, 0.2);
+}
+.cntr-redundant-data #frm-redundant-data #redundantdatalist tbody tr td,
+.cntr-redundant-data #frm-redundant-data #redundantdatalist_wrapper tbody tr td {
+  font: normal 0.8rem/0.8rem Arial, Helvetica, sans-serif;
+  color: black;
+  vertical-align: middle;
+}
+.cntr-redundant-data #frm-redundant-data #redundantdatalist tbody tr td span.employeename,
+.cntr-redundant-data #frm-redundant-data #redundantdatalist_wrapper tbody tr td span.employeename {
+  color: whitesmoke;
+  font-weight: 800;
+}
+.cntr-redundant-data #frm-redundant-data #redundantdatalist tbody tr td span.employeeaffiliatename,
+.cntr-redundant-data #frm-redundant-data #redundantdatalist_wrapper tbody tr td span.employeeaffiliatename {
+  color: whitesmoke;
+}

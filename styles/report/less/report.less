@@ -1,0 +1,674 @@
+@import "vars";
+
+#report {
+    
+    @keyframes attentionhide {
+        0%   { opacity: 1; }
+        20%   { opacity: 0.8; }
+        40%   { opacity: 0.6; }
+        60%   { opacity: 0.4; }
+        80%   { opacity: 0.2; }
+        100%  { opacity: 0.1; } // display is not animatable, https://stackoverflow.com/questions/30855985/pure-css-animation-visibility-with-delay
+    }
+    
+    #attention {
+        
+        border: 2px solid red;
+        
+        border-radius: 3px;
+        
+        padding: 0.5rem 0.7rem;
+        
+        font: 0.7rem/0.8rem Inconsolata, sans-serif, monospace;
+        
+        color: red;
+        
+        letter-spacing: 2px;
+        
+        word-spacing: 8px;
+        
+        -webkit-animation: attentionhide 7s linear 7s 1 normal forwards;
+        animation: attentionhide 7s linear 7s 1 normal forwards;
+/*        -webkit-animation-name: attentionhide;
+        -webkit-animation-duration: 5s;
+        -webkit-animation-delay: 5s;
+        -webkit-animation-fill-mode: forwards;
+        animation-name: attentionhide;
+        animation-duration: 5s;
+        animation-delay: 5s;
+        animation-fill-mode: forwards;*/
+        
+    }
+    
+    #wrapper {
+        
+        & when (@content-tabletag = table) {
+            table {
+                border-collapse: collapse;
+                //border: 1px solid black;
+                //table-layout: fixed;
+                //width: @table-width*1rem;
+                
+                tr > th {
+                    border: none;
+                }
+            }
+            
+        }
+        
+        /* Employee Results Column Visibility */
+        #@{tableid}-column-visibility {
+
+            //padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+
+            //border: 1px solid rgba(220, 220, 220, 0.8);
+
+            //border-radius: 5px;
+
+            //background: rgba(225, 225, 220, .4);
+
+            font: normal (@rt-thead-fontsize * 0.8 )/@rt-thead-lineheight @rt-thead-fontfamily;
+
+            text-align: right;
+
+            .splitter {
+
+                display: inline-block;
+
+                width: 1em;
+
+            }
+            
+            .quiz-column {
+                
+                padding: 1px 4px;
+                
+                border: 1px solid #0074D9;
+                
+                border-radius: 3px;
+                
+            }
+
+            .inactive {
+
+                color: #c0c0c0;
+
+            }
+
+        }
+        
+        #table {
+            
+            .if(@content-tabletag) when (@content-tabletag = table) {
+                // DOESN'T WORK
+            }
+            
+            thead.header {
+                
+                th, td {
+                    border-collapse: collapse;
+                }
+                
+                tr:nth-child(1) {
+                    
+                    > th {
+                        
+                        border-top: 1px solid #dee2e6;
+                        
+                    }
+                    
+                    > th:nth-child(-n+6) { // first 6 cells: 5, 4, 3, 2, 1, 0
+                        
+                        border-bottom: 2px solid #dee2e6;
+                        
+                    }
+                    
+                    > th:nth-child(n+13) { // last cells after #12 cell: 13, 14, ...
+                        
+                        border-bottom: 2px solid #dee2e6;
+                        
+                    }
+                    
+                }
+                
+                tr:nth-child(3) {
+                    
+                    > th {
+                        
+                        border-bottom: 2px solid #dee2e6;
+                        
+                    }
+                    
+                }
+                
+            }
+            
+            .header {
+                
+                font: bold @header-fontsize/@header-lineheight @header-font;
+                
+                [class*=rh-col-subcol-] {
+                    font-weight: normal;
+                }
+                
+                .rh-col {
+                    padding: 0.4rem;
+                    //border: 1px solid black;
+                    & when (@content-tabletag = table) {
+                        vertical-align: middle;
+                    }
+                }
+
+                .rh-col-subcol-A, .rh-col-subcol-B, .rh-col-subcol-C {
+                    
+                }
+                
+                // Columns
+                
+                // Numbering
+                .rh-col-numbering {
+                    width: @col-width-numbering*1rem;
+                    text-align: left;
+                }
+                
+                .rh-col-affiliate {
+                    width: @col-width-affiliate*1rem;
+                    text-align: left;
+                }
+                
+                .rh-col-department {
+                    width: @col-width-department*1rem;
+                    text-align: left;
+                }
+                
+                .rh-col-employee_number {
+                    width: @col-width-employee-number*1rem;
+                }
+                
+                .rh-col-fullname {
+                    width: @col-width-fullname*1rem;
+                }
+                .rh-col-fullname {
+                    position: sticky !important;
+                    left: 0;
+                    background-color: #fff;
+                    //background-color: inherit;
+                    z-index: 10;
+                }
+                
+                .rh-col-position {
+                    width: @col-width-position*1rem;
+                }
+                
+                .rh-col-group_of_electrical_safety {
+                    width: @col-width-group-of-electrical-safety*1rem;
+                }
+                
+                .rh-col-subcol-A-occupational_health {
+                    width: @col-width-subcol-A-occupational-health*1rem;
+                }
+                .rh-col-subcol-B-occupational_health {
+                    width: @col-width-subcol-B-occupational-health*1rem;
+                }
+                .rh-col-subcol-C-occupational_health {
+                    width: @col-width-subcol-C-occupational-health*1rem;
+                }
+                
+                .rh-col-subcol-A-technology_works {
+                    width: @col-width-subcol-A-technology-works*1rem;
+                }
+                .rh-col-subcol-B-technology_works {
+                    width: @col-width-subcol-B-technology-works*1rem;
+                }
+                .rh-col-subcol-C-technology_works {
+                    width: @col-width-subcol-C-technology-works*1rem;
+                }
+                
+                .rh-col-subcol-A-fire_safety_rules {
+                    width: @col-width-subcol-A-fire-safety-rules*1rem;
+                }
+                .rh-col-subcol-B-fire_safety_rules {
+                    width: @col-width-subcol-B-fire-safety-rules*1rem;
+                }
+                .rh-col-subcol-C-fire_safety_rules {
+                    width: @col-width-subcol-C-fire-safety-rules*1rem;
+                }
+                
+                .rh-col-subcol-A-safe_operation_of_lifts {
+                    width: @col-width-subcol-A-safe-operation-of-lifts*1rem;
+                }
+                .rh-col-subcol-B-safe_operation_of_lifts {
+                    width: @col-width-subcol-B-safe-operation-of-lifts*1rem;
+                }
+                .rh-col-subcol-C-safe_operation_of_lifts {
+                    width: @col-width-subcol-C-safe-operation-of-lifts*1rem;
+                }
+                
+                .rh-col-subcol-A-safe_operation_of_cranes {
+                    width: @col-width-subcol-A-safe-operation-of-cranes*1rem;
+                }
+                .rh-col-subcol-B-safe_operation_of_cranes {
+                    width: @col-width-subcol-B-safe-operation-of-cranes*1rem;
+                }
+                .rh-col-subcol-C-safe_operation_of_cranes {
+                    width: @col-width-subcol-C-safe-operation-of-cranes*1rem;
+                }
+                
+                .rh-col-subcol-A-pressure_vessels {
+                    width: @col-width-subcol-A-pressure-vessels*1rem;
+                }
+                .rh-col-subcol-B-pressure_vessels {
+                    width: @col-width-subcol-B-pressure-vessels*1rem;
+                }
+                .rh-col-subcol-C-pressure_vessels {
+                    width: @col-width-subcol-C-pressure-vessels*1rem;
+                }
+                
+                .rh-col-subcol-A-physical_examination {
+                    width: @col-width-subcol-A-physical-examination*1rem;
+                }
+                .rh-col-subcol-B-physical_examination {
+                    width: @col-width-subcol-B-physical-examination*1rem;
+                }
+                .rh-col-subcol-C-physical_examination {
+                    width: @col-width-subcol-C-physical-examination*1rem;
+                }
+                
+                .rh-col-commission_type {
+                    width: @col-width-commission-type*1rem;
+                }
+                
+                .rh-col-notes {
+                    width: @col-width-notes*1rem;
+                }
+
+            }
+            
+            .content {
+                font: @content-fontsize/@content-lineheight @content-font;
+                
+                .r-col {
+                    padding: 0.4rem;
+                    & when (@content-tabletag = table) {
+                        vertical-align: middle;
+                    }
+                }
+                
+                .r-col-numbering {
+                    text-align: left;
+                }
+                
+                .r-col-affiliate {
+                    text-align: left;
+                }
+                
+                .r-col-department {
+                    text-align: left;
+                }
+                
+                .r-col-fullname {
+                    text-align: left;
+                }
+                .r-col-fullname {
+                    position: sticky !important;
+                    left: 0;
+                    background-color: #fff;
+                    //background-color: inherit;
+                    z-index: 10;
+                }
+                
+                .r-col-position {
+                    text-align: left;
+                }
+            }
+                        
+        }
+        
+        
+        // DataTable Options
+        #@{tableid}, #@{tableid}_wrapper {
+    
+            margin-bottom: 3rem;
+
+            #@{tableid}_filter {
+
+                margin: 1.5rem 0 1.5rem 0;
+
+                text-align: left;
+
+                > label {
+
+                    display: block;
+
+                    width: 100%;
+
+                    > input[type="search"] {
+
+                        display: block;
+
+                        width: 90%;
+
+                        max-width: 100%;
+
+                        height: 1.8rem;
+
+                        font: normal @rt-thead-fontsize/@rt-thead-lineheight @rt-thead-fontfamily;
+
+                    }
+
+                }
+
+            }
+
+            #@{tableid}_length {
+
+                margin: 1.5rem 0 1.5rem 0;
+
+                > label {
+
+                    display: block;
+
+                    width: 100%;
+
+                    text-align: right;
+
+                    > input[type="select"] {
+
+        /*                display: block;
+
+                        width: 90%;
+
+                        max-width: 100%;*/
+
+                        height: 1.8rem;
+
+                        //font: normal @et-thead-fontsize/@et-thead-lineheight @et-thead-fontfamily;
+
+                    }
+
+                }
+
+            }
+
+            thead, tfoot {
+
+                tr {
+
+                    th {
+
+                        font: normal @rt-thead-fontsize/@rt-thead-lineheight @rt-thead-fontfamily;
+
+                        color: @rt-thead-color;
+
+                    }
+
+        /*            td.col-status {
+
+                        text-align: center;
+                    }*/
+
+                }
+
+            }
+
+            tbody {
+
+                tr {
+
+                    &.highlight {
+                        background-color: #f4f4f4;
+                    }
+
+                    td {
+
+                        //font: normal @et-thead-fontsize/@et-thead-lineheight @et-thead-fontfamily;
+
+                        color: black;
+
+                        vertical-align: middle;
+                        
+                        &.r-col-subcol-A {
+                            
+                            background: rgba(100, 156, 217, 0.2);
+
+                        }
+                        
+                        &.r-col-subcol-B {
+                            
+                            background: rgba(100, 156, 217, 0.2);
+
+                        }
+                        
+                        &.r-col-subcol-C {
+                            
+                            position: relative;
+                            
+                            background: rgba(100, 156, 217, 0.4);
+
+                            div.r-col-wrapper {
+
+                                font-weight: bold; 
+
+                            }
+                            
+                        }
+                        
+                        &.ondata-cursor {
+                            
+                            cursor: pointer;
+                            
+                        }
+
+                    }
+
+/*                    td.r-col-subcol-C {
+
+                        span {
+
+                            color: @c-status-color;
+
+                        }
+                    }
+
+                    td.col-datenext {
+
+                        input[type="date"] {
+
+                            height: 1.8rem;
+
+                            //font: normal @et-thead-fontsize/@et-thead-lineheight @et-thead-fontfamily;
+
+                        }
+                    }
+
+                    td.col-clean {
+
+                        span {
+
+                            //font: normal @et-thead-fontsize/@et-thead-lineheight @et-thead-fontfamily;
+
+                            text-transform: none;
+
+                        }
+
+                    }*/
+
+                }
+
+            }
+
+        }    
+        
+    }
+    
+}
+
+body {
+    
+    div.popover {
+                                
+        //position: absolute;
+
+        //left: 0; right: 0; bottom: 0;
+        
+        max-width: 1000px;
+
+        //height: 16px;
+
+        //background: rgba(0, 200, 0, 0.4);
+
+        h3.popover-header {
+
+        }
+
+        div.popover-body {
+    
+            //width: 16px;
+
+            //height: 16px;
+
+            //background: rgba(200, 0, 0, 0.4);
+            
+            div.schedulepoint-wrapper {
+                
+                display: flex;
+
+                flex-direction: row;
+
+                flex-wrap: nowrap;
+
+                justify-content: flex-start;
+                
+                max-width: 450px;
+                
+                div.days-wrapper {
+                    
+                    width: 100px;
+                    
+                    padding: 5px;
+                    
+                    span.left {
+                        
+                        
+                        
+                    }
+                    
+                    span.word {
+                        
+                        
+                        
+                    }
+                    
+                }
+                
+                div.quiz-name-wrapper {
+                    
+                    width: 200px;
+                    
+                    padding: 5px;
+                    
+                    span.title {
+                        
+                        font-weight: 700;
+                        
+                    }
+                    
+                }
+                
+                div.moodle-wrapper {
+                    
+                    width: 120px;
+                    
+                    padding: 5px;
+                    
+                    div.id-wrapper {
+                        
+                        padding: 0;
+                        
+                        form.report-frm {
+                            
+                            display: inline;
+
+                            padding: 0;
+                            
+                            .id {
+                                
+                            display: inline;
+
+                            padding: 0;
+                                
+                                .report-moodleid {
+                                                                        
+                                    display: inline;
+
+                                    padding: 0;
+                                        
+                                    .report-link {
+                                        
+                                        display: inline;
+                                        
+                                        padding: 0;
+                        
+                                        border: none;
+
+                                        background: transparent;
+
+                                        color: #1177d1;
+
+                                        text-align: left;
+                                        
+                                        outline: none;
+
+                                        &:hover {
+
+                                            cursor: pointer;
+
+                                            text-decoration: underline;
+
+                                        }
+
+                                    }
+                                    
+                                }
+                                
+                            }
+                            
+                        }
+                        
+                    }
+                    
+                    
+                                      
+                }
+                
+                div.toolbox-wrapper {
+                    
+                    display: flex;
+
+                    flex-direction: row;
+
+                    flex-wrap: nowrap;
+
+                    justify-content: center;
+                    
+                    align-items: center;
+                    
+                    width: 30px;
+                    
+                    padding: 5px;
+                    
+                    span.title {
+                        
+                        
+                        
+                    }
+                    
+                }
+                
+            }
+
+        }
+
+    }
+    
+}

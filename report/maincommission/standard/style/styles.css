@@ -1,0 +1,195 @@
+* {
+    box-sizing: border-box;
+}
+
+.report {
+    font-family: 'Times New Roman';
+    color: black;
+}
+
+.report .table {
+    border-collapse: collapse;
+    border: solid #000 !important;
+    border-width: 1px 0 0 1px !important;
+    margin: 0;
+    table-layout: fixed;
+    
+}
+.report .table, .report .table th, .report .table td {
+    padding: 0;
+    /*border: 1px solid black;*/
+}
+.report .table th, .report .table td {
+    border: solid #000 !important;
+    border-width: 0 1px 1px 0 !important;
+}
+
+
+
+/* Result report */
+.report .result {
+    font-size: 16px;        /*14px*/
+}
+
+.report .result .result-container {
+    width: 910px;           /*830px*/
+}
+
+.report .result .title {
+    padding-top: 16px;
+    padding-bottom: 0;
+    margin: 0 0 8px 0;
+    font-weight: 900;
+    text-align: center;
+}
+
+.report .result .text {
+    padding: 0;
+    margin: 0;
+}
+
+
+/** Table 1 */
+.report .result .table1 {
+    margin-bottom: 8px;
+}
+
+.report .result .table1 .header {
+    font-size: 14px;
+    font-weight: 900;
+    line-height: 14px;
+    text-align: center;
+}
+
+.report .result .table1 .content {
+    font-size: 16px;
+    line-height: 16px;
+    text-align: center;
+}
+
+.report .result .table1 th {
+    padding: 3px 4px;
+    vertical-align: top;
+}
+
+.report .result .table1 td {
+    padding: 3px 4px;
+    vertical-align: middle;
+}
+
+.report .result .table1 .col-1 {
+    width: 45%;
+}
+.report .result .table1 .col-2,
+.report .result .table1 .col-3,
+.report .result .table1 .col-4 {
+    width: 18.3333%;
+}
+
+
+/** Table 2 */
+.report .result .table2 {
+    margin-bottom: 8px;
+}
+
+.report .result .table2 tr:first-child th {
+    padding: 3px 4px;
+    font-size: 14px;        /*12px*/
+    font-weight: 900;
+    line-height: 14px;
+    text-align: center;
+    vertical-align: top;
+}
+
+.report .result .table2 tr td {
+    padding: 3px 4px;
+    font-size: 16px;         /*14px*/
+    line-height: 18px;
+}
+
+.report .result .table2 .date {
+    font-size: 16px;
+}
+.report .result .table2 .time {
+    font-size: 12px;
+    line-height: 12px;
+}
+
+.report .result .table2 .position {
+    font-size: 16px;
+}
+.report .result .table2 .company {
+    font-size: 16px;
+    word-break: break-all;
+}
+
+/**
+17.5 total: 1-0.8, 2-3, 3-1.9, 4-1.9, 5-4.8, 6-1.7, 7-1.7, 8-1.5
+*/
+.report .result .table2 .col-1 {
+    width: 4.5714%;
+}
+.report .result .table2 .col-2 {
+    width: 16.1429%;
+}
+.report .result .table2 .col-3 {
+    width: 11.8571%;
+}
+.report .result .table2 .col-4 {
+    width: 10.8571%;
+}
+.report .result .table2 .col-5 {
+    width: 28%;
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 500;
+}
+.report .result .table2 .col-6 {
+    width: 8.7143%;
+}
+.report .result .table2 .col-7 {
+    width: 8.7143%;
+}
+.report .result .table2 .col-8 {
+    width: 10.5714%;
+}
+
+.report .result .sign {
+    text-align: center;
+    font-style: italic;
+    font-size: 11px;
+}
+
+header, footer, aside, nav, form, iframe, .menu, .hero, .adslot {
+  display: none !important;
+}
+
+@page {
+    size: 210mm 297mm;
+    margin-top: 0.5cm;
+    margin-right: 1cm;
+    margin-bottom: 0.5cm;
+    margin-left: 2cm;
+    widows: 0;
+    orphans: 0;
+}
+
+@-moz-document url-prefix() {
+    header, footer, aside, nav, form, iframe, .menu, .hero, .adslot {
+    display: none !important;
+  }
+    @page { 
+        size: 210mm 297mm;
+        margin-top: 0.5cm;
+        margin-right: 1cm;
+        margin-bottom: 0.5cm;
+        margin-left: 2cm;
+        widows: 0;
+        orphans: 0;
+    }
+    table {
+        page-break-before: avoid;
+        page-break-after: avoid;
+        page-break-inside: auto;
+    }
+}

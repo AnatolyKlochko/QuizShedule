@@ -1,0 +1,407 @@
+/* Header */
+/* Header Cells */
+/* Content */
+/* Cells */
+/* DataTable Options */
+/* Report Data Table */
+/* Header Cells */
+@keyframes attentionhide {
+  0% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 0.8;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  60% {
+    opacity: 0.4;
+  }
+  80% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+#report #attention {
+  border: 2px solid red;
+  border-radius: 3px;
+  padding: 0.5rem 0.7rem;
+  font: 0.7rem/0.8rem Inconsolata, sans-serif, monospace;
+  color: red;
+  letter-spacing: 2px;
+  word-spacing: 8px;
+  -webkit-animation: attentionhide 7s linear 7s 1 normal forwards;
+  animation: attentionhide 7s linear 7s 1 normal forwards;
+  /*        -webkit-animation-name: attentionhide;
+        -webkit-animation-duration: 5s;
+        -webkit-animation-delay: 5s;
+        -webkit-animation-fill-mode: forwards;
+        animation-name: attentionhide;
+        animation-duration: 5s;
+        animation-delay: 5s;
+        animation-fill-mode: forwards;*/
+}
+#report #wrapper {
+  /* Employee Results Column Visibility */
+}
+#report #wrapper table {
+  border-collapse: collapse;
+}
+#report #wrapper table tr > th {
+  border: none;
+}
+#report #wrapper #table-column-visibility {
+  font: normal 0.64rem/0.8rem Arial, Helvetica, sans-serif;
+  text-align: right;
+}
+#report #wrapper #table-column-visibility .splitter {
+  display: inline-block;
+  width: 1em;
+}
+#report #wrapper #table-column-visibility .quiz-column {
+  padding: 1px 4px;
+  border: 1px solid #0074D9;
+  border-radius: 3px;
+}
+#report #wrapper #table-column-visibility .inactive {
+  color: #c0c0c0;
+}
+#report #wrapper #table thead.header th,
+#report #wrapper #table thead.header td {
+  border-collapse: collapse;
+}
+#report #wrapper #table thead.header tr:nth-child(1) > th {
+  border-top: 1px solid #dee2e6;
+}
+#report #wrapper #table thead.header tr:nth-child(1) > th:nth-child(-n+6) {
+  border-bottom: 2px solid #dee2e6;
+}
+#report #wrapper #table thead.header tr:nth-child(1) > th:nth-child(n+13) {
+  border-bottom: 2px solid #dee2e6;
+}
+#report #wrapper #table thead.header tr:nth-child(3) > th {
+  border-bottom: 2px solid #dee2e6;
+}
+#report #wrapper #table .header {
+  font: bold 0.8rem/1rem Arial, Helvetica, sans-serif;
+}
+#report #wrapper #table .header [class*=rh-col-subcol-] {
+  font-weight: normal;
+}
+#report #wrapper #table .header .rh-col {
+  padding: 0.4rem;
+  vertical-align: middle;
+}
+#report #wrapper #table .header .rh-col-numbering {
+  width: 4rem;
+  text-align: left;
+}
+#report #wrapper #table .header .rh-col-affiliate {
+  width: 13rem;
+  text-align: left;
+}
+#report #wrapper #table .header .rh-col-department {
+  width: 10rem;
+  text-align: left;
+}
+#report #wrapper #table .header .rh-col-employee_number {
+  width: 5rem;
+}
+#report #wrapper #table .header .rh-col-fullname {
+  width: 13rem;
+}
+#report #wrapper #table .header .rh-col-fullname {
+  position: sticky !important;
+  left: 0;
+  background-color: #fff;
+  z-index: 10;
+}
+#report #wrapper #table .header .rh-col-position {
+  width: 10rem;
+}
+#report #wrapper #table .header .rh-col-group_of_electrical_safety {
+  width: 5rem;
+}
+#report #wrapper #table .header .rh-col-subcol-A-occupational_health {
+  width: 5rem;
+}
+#report #wrapper #table .header .rh-col-subcol-B-occupational_health {
+  width: 5rem;
+}
+#report #wrapper #table .header .rh-col-subcol-C-occupational_health {
+  width: 5rem;
+}
+#report #wrapper #table .header .rh-col-subcol-A-technology_works {
+  width: 5rem;
+}
+#report #wrapper #table .header .rh-col-subcol-B-technology_works {
+  width: 5rem;
+}
+#report #wrapper #table .header .rh-col-subcol-C-technology_works {
+  width: 5rem;
+}
+#report #wrapper #table .header .rh-col-subcol-A-fire_safety_rules {
+  width: 5rem;
+}
+#report #wrapper #table .header .rh-col-subcol-B-fire_safety_rules {
+  width: 5rem;
+}
+#report #wrapper #table .header .rh-col-subcol-C-fire_safety_rules {
+  width: 5rem;
+}
+#report #wrapper #table .header .rh-col-subcol-A-safe_operation_of_lifts {
+  width: 5rem;
+}
+#report #wrapper #table .header .rh-col-subcol-B-safe_operation_of_lifts {
+  width: 5rem;
+}
+#report #wrapper #table .header .rh-col-subcol-C-safe_operation_of_lifts {
+  width: 5rem;
+}
+#report #wrapper #table .header .rh-col-subcol-A-safe_operation_of_cranes {
+  width: 5rem;
+}
+#report #wrapper #table .header .rh-col-subcol-B-safe_operation_of_cranes {
+  width: 5rem;
+}
+#report #wrapper #table .header .rh-col-subcol-C-safe_operation_of_cranes {
+  width: 5rem;
+}
+#report #wrapper #table .header .rh-col-subcol-A-pressure_vessels {
+  width: 5rem;
+}
+#report #wrapper #table .header .rh-col-subcol-B-pressure_vessels {
+  width: 5rem;
+}
+#report #wrapper #table .header .rh-col-subcol-C-pressure_vessels {
+  width: 5rem;
+}
+#report #wrapper #table .header .rh-col-subcol-A-physical_examination {
+  width: 5rem;
+}
+#report #wrapper #table .header .rh-col-subcol-B-physical_examination {
+  width: 5rem;
+}
+#report #wrapper #table .header .rh-col-subcol-C-physical_examination {
+  width: 5rem;
+}
+#report #wrapper #table .header .rh-col-commission_type {
+  width: 9rem;
+}
+#report #wrapper #table .header .rh-col-notes {
+  width: 5rem;
+}
+#report #wrapper #table .content {
+  font: 0.8rem/1rem Arial, Helvetica, sans-serif;
+}
+#report #wrapper #table .content .r-col {
+  padding: 0.4rem;
+  vertical-align: middle;
+}
+#report #wrapper #table .content .r-col-numbering {
+  text-align: left;
+}
+#report #wrapper #table .content .r-col-affiliate {
+  text-align: left;
+}
+#report #wrapper #table .content .r-col-department {
+  text-align: left;
+}
+#report #wrapper #table .content .r-col-fullname {
+  text-align: left;
+}
+#report #wrapper #table .content .r-col-fullname {
+  position: sticky !important;
+  left: 0;
+  background-color: #fff;
+  z-index: 10;
+}
+#report #wrapper #table .content .r-col-position {
+  text-align: left;
+}
+#report #wrapper #table,
+#report #wrapper #table_wrapper {
+  margin-bottom: 3rem;
+}
+#report #wrapper #table #table_filter,
+#report #wrapper #table_wrapper #table_filter {
+  margin: 1.5rem 0 1.5rem 0;
+  text-align: left;
+}
+#report #wrapper #table #table_filter > label,
+#report #wrapper #table_wrapper #table_filter > label {
+  display: block;
+  width: 100%;
+}
+#report #wrapper #table #table_filter > label > input[type="search"],
+#report #wrapper #table_wrapper #table_filter > label > input[type="search"] {
+  display: block;
+  width: 90%;
+  max-width: 100%;
+  height: 1.8rem;
+  font: normal 0.8rem/0.8rem Arial, Helvetica, sans-serif;
+}
+#report #wrapper #table #table_length,
+#report #wrapper #table_wrapper #table_length {
+  margin: 1.5rem 0 1.5rem 0;
+}
+#report #wrapper #table #table_length > label,
+#report #wrapper #table_wrapper #table_length > label {
+  display: block;
+  width: 100%;
+  text-align: right;
+}
+#report #wrapper #table #table_length > label > input[type="select"],
+#report #wrapper #table_wrapper #table_length > label > input[type="select"] {
+  /*                display: block;
+
+                        width: 90%;
+
+                        max-width: 100%;*/
+  height: 1.8rem;
+}
+#report #wrapper #table thead tr,
+#report #wrapper #table_wrapper thead tr,
+#report #wrapper #table tfoot tr,
+#report #wrapper #table_wrapper tfoot tr {
+  /*            td.col-status {
+
+                        text-align: center;
+                    }*/
+}
+#report #wrapper #table thead tr th,
+#report #wrapper #table_wrapper thead tr th,
+#report #wrapper #table tfoot tr th,
+#report #wrapper #table_wrapper tfoot tr th {
+  font: normal 0.8rem/0.8rem Arial, Helvetica, sans-serif;
+  color: #0074D9;
+}
+#report #wrapper #table tbody tr,
+#report #wrapper #table_wrapper tbody tr {
+  /*                    td.r-col-subcol-C {
+
+                        span {
+
+                            color: @c-status-color;
+
+                        }
+                    }
+
+                    td.col-datenext {
+
+                        input[type="date"] {
+
+                            height: 1.8rem;
+
+                            //font: normal @et-thead-fontsize/@et-thead-lineheight @et-thead-fontfamily;
+
+                        }
+                    }
+
+                    td.col-clean {
+
+                        span {
+
+                            //font: normal @et-thead-fontsize/@et-thead-lineheight @et-thead-fontfamily;
+
+                            text-transform: none;
+
+                        }
+
+                    }*/
+}
+#report #wrapper #table tbody tr.highlight,
+#report #wrapper #table_wrapper tbody tr.highlight {
+  background-color: #f4f4f4;
+}
+#report #wrapper #table tbody tr td,
+#report #wrapper #table_wrapper tbody tr td {
+  color: black;
+  vertical-align: middle;
+}
+#report #wrapper #table tbody tr td.r-col-subcol-A,
+#report #wrapper #table_wrapper tbody tr td.r-col-subcol-A {
+  background: rgba(100, 156, 217, 0.2);
+}
+#report #wrapper #table tbody tr td.r-col-subcol-B,
+#report #wrapper #table_wrapper tbody tr td.r-col-subcol-B {
+  background: rgba(100, 156, 217, 0.2);
+}
+#report #wrapper #table tbody tr td.r-col-subcol-C,
+#report #wrapper #table_wrapper tbody tr td.r-col-subcol-C {
+  position: relative;
+  background: rgba(100, 156, 217, 0.4);
+}
+#report #wrapper #table tbody tr td.r-col-subcol-C div.r-col-wrapper,
+#report #wrapper #table_wrapper tbody tr td.r-col-subcol-C div.r-col-wrapper {
+  font-weight: bold;
+}
+#report #wrapper #table tbody tr td.ondata-cursor,
+#report #wrapper #table_wrapper tbody tr td.ondata-cursor {
+  cursor: pointer;
+}
+body div.popover {
+  max-width: 1000px;
+}
+body div.popover div.popover-body div.schedulepoint-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  max-width: 450px;
+}
+body div.popover div.popover-body div.schedulepoint-wrapper div.days-wrapper {
+  width: 100px;
+  padding: 5px;
+}
+body div.popover div.popover-body div.schedulepoint-wrapper div.quiz-name-wrapper {
+  width: 200px;
+  padding: 5px;
+}
+body div.popover div.popover-body div.schedulepoint-wrapper div.quiz-name-wrapper span.title {
+  font-weight: 700;
+}
+body div.popover div.popover-body div.schedulepoint-wrapper div.moodle-wrapper {
+  width: 120px;
+  padding: 5px;
+}
+body div.popover div.popover-body div.schedulepoint-wrapper div.moodle-wrapper div.id-wrapper {
+  padding: 0;
+}
+body div.popover div.popover-body div.schedulepoint-wrapper div.moodle-wrapper div.id-wrapper form.report-frm {
+  display: inline;
+  padding: 0;
+}
+body div.popover div.popover-body div.schedulepoint-wrapper div.moodle-wrapper div.id-wrapper form.report-frm .id {
+  display: inline;
+  padding: 0;
+}
+body div.popover div.popover-body div.schedulepoint-wrapper div.moodle-wrapper div.id-wrapper form.report-frm .id .report-moodleid {
+  display: inline;
+  padding: 0;
+}
+body div.popover div.popover-body div.schedulepoint-wrapper div.moodle-wrapper div.id-wrapper form.report-frm .id .report-moodleid .report-link {
+  display: inline;
+  padding: 0;
+  border: none;
+  background: transparent;
+  color: #1177d1;
+  text-align: left;
+  outline: none;
+}
+body div.popover div.popover-body div.schedulepoint-wrapper div.moodle-wrapper div.id-wrapper form.report-frm .id .report-moodleid .report-link:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+body div.popover div.popover-body div.schedulepoint-wrapper div.toolbox-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  padding: 5px;
+}

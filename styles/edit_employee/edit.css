@@ -1,0 +1,96 @@
+/* Form */
+@media (max-width: 991px) {
+  #frm-affiliate #cntr-affiliate #cntr-search {
+    /*                text-align: center;
+                
+                > input[name="submit_affiliate"] {
+                    
+                    margin: 1rem 0 0 0;
+                    
+                }*/
+  }
+}
+/* Employee Table */
+/* Header Cells */
+/* Columns */
+/* Employee Results Column Visibility */
+#employeelistedit-column-visibility {
+  font: normal 0.64rem/0.8rem Arial, Helvetica, sans-serif;
+  text-align: right;
+}
+#employeelistedit-column-visibility .splitter {
+  display: inline-block;
+  width: 1em;
+}
+#employeelistedit-column-visibility .inactive {
+  color: #c0c0c0;
+}
+#employeelistedit,
+#employeelistedit_wrapper {
+  margin-bottom: 3rem;
+}
+#employeelistedit #employeelistedit_filter,
+#employeelistedit_wrapper #employeelistedit_filter {
+  margin: 1.5rem 0 1.5rem 0;
+  text-align: left;
+}
+#employeelistedit #employeelistedit_filter > label,
+#employeelistedit_wrapper #employeelistedit_filter > label {
+  display: block;
+  width: 100%;
+}
+#employeelistedit #employeelistedit_filter > label > input[type="search"],
+#employeelistedit_wrapper #employeelistedit_filter > label > input[type="search"] {
+  display: block;
+  width: 90%;
+  max-width: 100%;
+  height: 1.8rem;
+  font: normal 0.8rem/0.8rem Arial, Helvetica, sans-serif;
+}
+#employeelistedit #employeelistedit_length,
+#employeelistedit_wrapper #employeelistedit_length {
+  margin: 1.5rem 0 1.5rem 0;
+}
+#employeelistedit #employeelistedit_length > label,
+#employeelistedit_wrapper #employeelistedit_length > label {
+  display: block;
+  width: 100%;
+  text-align: right;
+}
+#employeelistedit #employeelistedit_length > label > input[type="select"],
+#employeelistedit_wrapper #employeelistedit_length > label > input[type="select"] {
+  /*                display: block;
+                
+                width: 90%;
+                
+                max-width: 100%;*/
+  height: 1.8rem;
+  font: normal 0.8rem/0.8rem Arial, Helvetica, sans-serif;
+}
+#employeelistedit thead tr,
+#employeelistedit_wrapper thead tr,
+#employeelistedit tfoot tr,
+#employeelistedit_wrapper tfoot tr {
+  /*            td.col-status {
+                    
+                text-align: center;
+            }*/
+}
+#employeelistedit thead tr th,
+#employeelistedit_wrapper thead tr th,
+#employeelistedit tfoot tr th,
+#employeelistedit_wrapper tfoot tr th {
+  font: normal 0.8rem/0.8rem Arial, Helvetica, sans-serif;
+  color: #0074D9;
+}
+#employeelistedit tbody tr.highlight,
+#employeelistedit_wrapper tbody tr.highlight {
+  background-color: #f4f4f4;
+}
+#employeelistedit tbody tr td,
+#employeelistedit_wrapper tbody tr td {
+  font: normal 0.8rem/0.8rem Arial, Helvetica, sans-serif;
+  color: black;
+  vertical-align: middle;
+}
+/*# sourceMappingURL=edit.css.map */

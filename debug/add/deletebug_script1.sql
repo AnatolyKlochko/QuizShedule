@@ -1,0 +1,1 @@
+CALL deletebug_move_grade_from_quizattempts_to_quizschedule();

@@ -1,0 +1,2 @@
+G: css print don show table border
+https://webmasters.stackexchange.com/questions/2578/how-to-prevent-table-borders-from-disappearing-while-printing

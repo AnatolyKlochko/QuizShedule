@@ -1,0 +1,290 @@
+/* Form */
+
+// col-md and less
+@media (max-width: 991px) {
+    
+    #frm-affiliate {
+        
+        #cntr-affiliate {
+            
+            #cntr-search {
+                
+                text-align: center;
+                
+                > input[name="submit_affiliate"] {
+                    
+                    margin: 1rem 0 0 0;
+                    
+                }
+                
+            }
+            
+        }
+        
+    }
+    
+    
+    #@{tableid}, #@{tableid}_wrapper {
+        
+        tbody {
+        
+            tr {
+
+                td.col-status {
+
+                    text-align: left !important;
+                    
+                    ::before {
+                        
+                        content: "";
+                        
+                    }
+                    
+                }
+                
+            }
+            
+        }
+        
+    }
+    
+}
+
+/* Search Field */
+.cntr-quiz-grcolumn {
+    
+    #frm-quizname {
+        
+        margin-bottom: 2rem;
+        
+        #cntr-quizname {
+            
+            min-width: 25rem;
+                
+            margin-right: 1rem;
+            
+            #quizname {
+                
+                min-width: inherit;
+                
+                //margin-right: 1rem;
+                
+            }
+            
+        }
+        
+    }
+    
+    #frm-quizzes-grcolumn {
+        
+        #cntr-grcolumn {
+            
+            margin-bottom: 2rem;
+            
+            .cntr-grcolumnlist {
+                
+                #grcolumnid {
+                    
+                    width: 25rem;
+                    
+                }
+                
+            }
+            
+        }
+        
+    }
+    
+}
+
+
+
+/* Quizzes Table */
+
+@tableid: quizlist_grcolumn;
+
+/* Header Cells */
+// et - employee table
+@et-thead-fontfamily: Arial, Helvetica, sans-serif;
+@et-thead-fontsize: 0.8rem;
+@et-thead-lineheight: 0.8rem;
+@et-thead-color: #0074D9;
+
+/* Columns */
+@c-status-color: lightgreen;
+
+
+
+
+
+/* Employee Results Column Visibility */
+#@{tableid}-column-visibility {
+    
+    //padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+    
+    //border: 1px solid rgba(220, 220, 220, 0.8);
+    
+    //border-radius: 5px;
+    
+    //background: rgba(225, 225, 220, .4);
+    
+    font: normal (@et-thead-fontsize * 0.8 )/@et-thead-lineheight @et-thead-fontfamily;
+    
+    text-align: right;
+    
+    .splitter {
+        
+        display: inline-block;
+        
+        width: 1em;
+        
+    }
+    
+    .inactive {
+        
+        color: #c0c0c0;
+        
+    }
+    
+}
+
+#@{tableid}, #@{tableid}_wrapper {
+    
+    margin-bottom: 3rem;
+    
+    #@{tableid}_filter {
+        
+        margin: /*1.5rem*/0 0 1.5rem 0;
+        
+        text-align: left;
+        
+        > label {
+            
+            display: block;
+            
+            width: 100%;
+            
+            > input[type="search"] {
+                
+                display: block;
+                
+                width: 90%;
+                
+                max-width: 100%;
+                
+                height: 1.8rem;
+                
+                font: normal @et-thead-fontsize/@et-thead-lineheight @et-thead-fontfamily;
+                
+            }
+            
+        }
+        
+    }
+    
+    #@{tableid}_length {
+        
+        margin: /*1.5rem*/0 0 1.5rem 0;
+        
+        > label {
+            
+            display: block;
+            
+            width: 100%;
+            
+            text-align: right;
+            
+            > input[type="select"] {
+                
+/*                display: block;
+                
+                width: 90%;
+                
+                max-width: 100%;*/
+                
+                height: 1.8rem;
+                
+                font: normal @et-thead-fontsize/@et-thead-lineheight @et-thead-fontfamily;
+                
+            }
+            
+        }
+        
+    }
+    
+    thead, tfoot {
+        
+        tr {
+            
+            th {
+                
+                font: normal @et-thead-fontsize/@et-thead-lineheight @et-thead-fontfamily;
+                
+                color: @et-thead-color;
+                
+            }
+            
+/*            td.col-status {
+                    
+                text-align: center;
+            }*/
+            
+        }
+        
+    }
+    
+    tbody {
+        
+        tr {
+            
+            &.highlight {
+                background-color: #f4f4f4;
+            }
+            
+            td {
+                
+                font: normal @et-thead-fontsize/@et-thead-lineheight @et-thead-fontfamily;
+                
+                color: black;
+                
+                vertical-align: middle;
+                
+            }
+            
+            td.col-status {
+                    
+                span {
+                    
+                    color: @c-status-color;
+
+                }
+            }
+            
+            td.col-datenext {
+                    
+                input[type="date"] {
+                    
+                    height: 1.8rem;
+
+                    font: normal @et-thead-fontsize/@et-thead-lineheight @et-thead-fontfamily;
+
+                }
+            }
+            
+            td.col-clean {
+                
+                span {
+                    
+                    font: normal @et-thead-fontsize/@et-thead-lineheight @et-thead-fontfamily;
+                
+                    text-transform: none;
+
+                }
+                
+            }
+            
+        }
+        
+    }
+    
+}

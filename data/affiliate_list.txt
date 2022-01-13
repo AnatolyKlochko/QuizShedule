@@ -1,0 +1,59 @@
+at_poltavaoblenergo
+veliko_kohnіvska_fіlіya
+gadyacka_fіlіya
+globinska_fіlіya
+grebіnkіvska_fіlіya
+dikanska_fіlіya
+zіnkіvska_fіlіya
+karlіvska_fіlіya
+kobelyacka_fіlіya
+kozelshhinska_fіlіya
+komsomolska_fіlіya
+kotelevska_fіlіya
+krasnogorіvska_fіlіya
+kremenchucka_fіlіya
+lohvicka_fіlіya
+lubenska_fіlіya
+mashіvska_fіlіya
+mirgorodska_fіlіya
+novosanzharska_fіlіya
+orzhicka_fіlіya
+piryatinska_fіlіya
+poltavska_fіlіya_mem
+poltavskij_rajon_rem
+reshetilіvska_fіlіya
+semenіvska_fіlіya
+khorolska_fіlіya
+chornuhinska_fіlіya
+chutіvska_fіlіya
+shishacka_fіlіya
+
+АТ "ПОЛТАВАОБЛЕНЕРГО"
+Велико-Кохнівська філія
+Гадяцька філія
+Глобинська філія
+Гребінківська філія
+Диканьська філія
+Зіньківська філія
+Карлівська філія
+Кобеляцька філія
+Козельщинська філія
+Комсомольська філія
+Котелевська філія
+Красногорівська філія
+Кременчуцька філія
+Лохвицька філія
+Лубенська філія
+Машівська філія
+Миргородська філія
+Новосанжарська філія
+Оржицька філія
+Пирятинська філія
+Полтавська філія МЕМ
+Полтавський район РЕМ
+Решетилівська філія
+Семенівська філія
+Хорольська філія
+Чорнухинська філія
+Чутівська філія
+Шишацька філія
